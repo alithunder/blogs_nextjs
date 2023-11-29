@@ -1,0 +1,21 @@
+.navbtn{
+    display: flex;
+    gap: 20px;
+    display: flex;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.top{
+    border-bottom: 1px solid #ccc;
+}
+.link{
+    color: black;
+    text-decoration: none;
+}
+.link:hover{
+    color: blueviolet;
+}

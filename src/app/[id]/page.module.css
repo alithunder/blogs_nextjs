@@ -1,0 +1,23 @@
+@keyframes moving{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+.cata{
+    display: flex;
+    justify-content: space-between;
+}
+.by{
+    color: #666666;
+    font-size: 16px;
+}
+.img{
+    margin-top: 30px;
+    object-fit: cover;
+    animation: moving 1s;
+}

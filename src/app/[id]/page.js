@@ -23,7 +23,10 @@ export default async function Page({ params }) {
         <p className={styles.by}>{format(new Date(selectedBlog.created_at), 'MMMM dd,yyyy')}</p>
         </div>
         <Image className={styles.img} src={selectedBlog.photo_url} alt="Blog Image" width={1000} height={220} />
-        <p>{convert(selectedBlog.content_html)}</p>
+        <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{ __html: selectedBlog.content_html }}
+        ></div>
         </Container>
 
         </>
